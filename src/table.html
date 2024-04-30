@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>l'élément de tableau HTML</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <div class="wrapper">
+  <div class="container">
+   <h4><a href="https://developer.mozilla.org/fr/docs/Web/HTML">😎 HTML Documentation</a></h4>
+   <h1>l'élément de tableau HTML</h1>
+   <p><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/table">Documentation sur les < table> </a>
+   </p>
+   <p>L'élément HTML
+    < table> permet de représenter un tableau de données, c'est-à-dire des informations exprimées sur un
+     tableau en deux dimensions.
+   </p>
+
+   <!-- les table -->
+   <table border="1" style="width: 100%">
+    <!-- ouverture de la table, border="1" affiche un border de 1px, préférable de laisser la css s'occuper des borders -->
+    <thead align="left">
+     <th>One</th>
+     <th>Two</th>
+     <th>Three</th>
+     <th>Four</th>
+    </thead>
+    <tr><!-- ouverture de la table row ou rangé -->
+     <td>Un < td>
+     </td><!-- ouverture d'une cellule de la rangé -->
+     <td bgcolor="yellow">Un td</td>
+     <td>Un td</td>
+     <td>Un td</td>
+    </tr><!-- fermeture de la Table Row ou TR ou rangé -->
+    <tr><!-- ouverture de la table row ou rangé -->
+     <td>
+      Un autre td
+     </td>
+    </tr><!-- fermeture de la Table Row ou TR ou rangé du tableau -->
+    <caption>
+     < caption> c'est la légende
+    </caption>
+   </table><!-- fermeture de la table -->
+  </div>
+ </div>
+ <section>
+  <hr>
+  <article>
+   <h2>Table</h2>
+   <p><strong>bgcolor = " yellow "</strong> on met un fond de couleur </p>
+   <p><strong>Align =" left | center | right "</strong> aligner à l'horizontal l'élément présent dans la cellule</p>
+  </article>
+  <div>
+   exemple
+  </div>
+
+  <!-- Tableau simple avec en-tête -->
+  <table border="1">
+   <tr>
+    <th>Prénom</th>
+    <th>Nom</th>
+   </tr>
+   <tr>
+    <td>Jean</td>
+    <td>Dupont</td>
+   </tr>
+   <tr>
+    <td>Marion</td>
+    <td>Duval</td>
+   </tr>
+  </table>
+
+  <br>
+  <!-- Tableau utilisant thead, tfoot, et tbody -->
+  <table border="1">
+   <thead>
+    <tr>
+     <th>Contenu d'en-tête 1</th>
+     <th>Contenu d'en-tête 2</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>Contenu interne 1</td>
+     <td>Contenu interne 2</td>
+    </tr>
+   </tbody>
+   <tfoot>
+    <tr>
+     <td>Pied de tableau 1</td>
+     <td>Pied de tableau 2</td>
+    </tr>
+   </tfoot>
+  </table>
+  <br>
+  <!-- Tableau utilisant colgroup -->
+  <table border="1">
+   <colgroup span="4" class="columns"></colgroup>
+   <tr>
+    <th>Pays</th>
+    <th>Capitales</th>
+    <th>Population</th>
+    <th>Langue</th>
+   </tr>
+   <tr>
+    <td>USA</td>
+    <td>Washington D.C.</td>
+    <td>309 millions</td>
+    <td>Anglais</td>
+   </tr>
+   <tr>
+    <td>Suède</td>
+    <td>Stockholm</td>
+    <td>9 millions</td>
+    <td>Suédois</td>
+   </tr>
+  </table>
+  <br>
+  <!-- Tableau utilisant colgroup et col -->
+  <table border="1">
+   <colgroup>
+    <col class="column1" />
+    <col class="columns2plus3" span="2" />
+   </colgroup>
+   <tr>
+    <th>Citron vert</th>
+    <th>Citron</th>
+    <th>Orange</th>
+   </tr>
+   <tr>
+    <td>Vert</td>
+    <td>Jaune</td>
+    <td>Orange</td>
+   </tr>
+  </table>
+  <br>
+  <!-- Tableau simple avec une légende -->
+  <table border="1">
+   <caption>
+    Super légende
+   </caption>
+   <tr>
+    <td>Données géniales</td>
+   </tr>
+  </table>
+
+ </section>
+
+
+</body>
+
+</html>
