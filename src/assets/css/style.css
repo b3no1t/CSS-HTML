@@ -2,6 +2,9 @@
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 }
+:root{
+  --variablecouleur-menu: blue;
+}
 body {
   background-color: #f1f2f3;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -9,11 +12,40 @@ body {
 h1 {
   margin-bottom: 2rem;
 }
+.container__img{
+  display: flex;
+  img{
+    width: 50%;
+  }
+}
+figure{
+  padding: var(--paddingGlobal);
+  position: relative;
+  img{
+    width: 100%;
+  }
+  figcaption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: cadetblue;
+    color: white;
+    font-weight: 900;
+    padding: 1rem;
+     margin: auto 0; 
+     
+  }
+}
+
+.nav-link.fleur{
+  color: var(--variablecouleur-menu);
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .wrapper {
 
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
   display: flex;
   justify-content: center;
   /* align-items: center; */
@@ -130,4 +162,29 @@ a.nav-link:hover{
   border: 1px dashed darkblue;
   width: 120px;
   height: 120px;
+}
+/* Ici c le style du formulauire contact */
+.form-contact__container{
+  display: flex;
+background-color: beige;
+padding: 4rem;
+  /* & = le parent */
+  & .column{
+    width: 50%;
+  }
+ & input[type="text"]{
+  border: none;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgb(194, 194, 170);
+  color: white;
+ }
+
+}
+input[type="text"]:focus-visible{
+outline: 0;
+ }
+h1{
+  font-family: times;
+  font-size: 4rem;
 }
