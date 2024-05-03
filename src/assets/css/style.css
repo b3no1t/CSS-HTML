@@ -1,99 +1,133 @@
-*{
- margin: 0 0 0 0;
- padding: 0 0 0 0;
+* {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
-body{
- background-color: #f1F2F3;
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+  background-color: #f1f2f3;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-h1{
- margin-bottom: 2rem;
+h1 {
+  margin-bottom: 2rem;
 }
-.wrapper{
- background-image: url("../img/toto.jpg");
- background-repeat: no-repeat;
- background-size: cover;
- height: 100vh;
- display:flex; 
- justify-content: center;
- /* align-items: center; */
+.wrapper {
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
-hr{
- margin: 1rem 0;
+hr {
+  margin: 1rem 0;
 }
-.container{
- width: 760px;
- background-color: white;
- padding: 2rem;
- display: flex;
- flex-direction: column;
+.container {
+  width: 760px;
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }
-.title{
- font-size: 4rem;
- color: coral;
+.title {
+  font-size: 4rem;
+  color: coral;
 }
-p.content{
- font-size: 2rem;
+p.content {
+  font-size: 2rem;
 }
-.span{
- color: cadetblue;
+.span {
+  color: cadetblue;
 }
 
-.btn__link{
- color: white;
- font-size: 2rem ;
- background-color: salmon ;
- padding: 1rem;
- text-decoration: none;
- 
+.btn__link {
+  color: white;
+  font-size: 2rem;
+  background-color: salmon;
+  padding: 1rem;
+  text-decoration: none;
 }
-.btn__link:hover{
- background-color: burlywood;
+.btn__link:hover {
+  background-color: burlywood;
 }
 /* a.btn__link:visited{
  color: red;
 } */
-a.btn__link:active{
- background-color: black;
+a.btn__link:active {
+  background-color: black;
 }
-input[type=checkbox]:checked{
- width: 120px;
- height: 120px;
+input[type="checkbox"]:checked {
+  width: 120px;
+  height: 120px;
 }
-input[type=text]:focus{
- border: 4px solid greenyellow;
+input[type="text"]:focus {
+  border: 4px solid greenyellow;
 }
 /* Les positions */
-.ancestor{
- border: 1px solid aquamarine;
- background-color: #cbcbcb;
- position: relative;
+.ancestor {
+  border: 1px solid aquamarine;
+  background-color: #cbcbcb;
+  position: relative;
+}
+.parent {
+  border: 1px solid orangered;
+  background-color: #f1f2f3;
+}
+.child {
+  border: 1px solid saddlebrown;
+  width: 150px;
+  position: absolute;
+  left: 400px;
+  top: 25px;
+  z-index: 50;
+  background-color: goldenrod;
+}
+.child2 {
+  border: 1px solid seagreen;
+  width: 200px;
+  padding: 1rem;
+  position: absolute;
+  left: 400px;
+  top: -20px;
+  background-color: #fff;
+  z-index: 60;
+}
+.ancestor,
+.parent,
+.child {
+  padding: 1rem;
+}
+/* navigation */
+.navigation {
+  background-color: salmon;
+}
 
+.navigation .menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
 }
-.parent{
- border: 1px solid orangered;
- background-color: #F1F2F3;
+.navigation .menu .nav-item {
+  margin-left: 1rem;
+  list-style: none;
+}
 
+a.nav-link{
+ text-decoration: none;
+ color: white;
+ transition: color 1s;
 }
-.child{
- border: 1px solid saddlebrown;
- width: 150px;
- position: absolute;
- left: 400px;
- top: 25px;
- z-index: 50;
- background-color: goldenrod;
+
+a.nav-link:hover{
+ color: black;
 }
-.child2{
- border: 1px solid seagreen;
- width: 200px;
- padding: 1rem;
- position: absolute;
- left: 400px;
- top: -20px;
- background-color: #fff;
- z-index: 60;
+.blocks{
+  border: 1px solid aqua;
+  width: 100%;
+  display: flex;
+  
 }
-.ancestor, .parent, .child{
- padding: 1rem;
+.block{
+  border: 1px dashed darkblue;
+  width: 120px;
+  height: 120px;
 }
